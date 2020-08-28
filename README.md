@@ -1,24 +1,27 @@
-# README
+# Top50
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## SITE
+    https://top50reddit.herokuapp.com/
 
-Things you may want to cover:
+## NOTES
 
-* Ruby version
+###  The developed features are:
 
-* System dependencies
+    - Responsive design
+    - Dismiss All Button (remove all posts. Animations required)
 
-* Configuration
 
-* Database creation
+ Given the amount of time requested for develompent, only these these features where built.  These are also the minimun features that make the app valuable to a user (it shows the latest top50 and lets you refresh by dismissing the current items)
 
-* Database initialization
 
-* How to run the test suite
+### Important decisions
 
-* Services (job queues, cache servers, search engines, etc.)
+- Using env vars in fontend to reference backend
+- Abstracting code of Button component, so it can be reused everywhere.
+- Giving feedback to the user with a loading indicator.
+- Allowing users to reload posts so the app is usable even after dismissing all.
+- Using a Service in rails, to abstract logic of callin reddit's api.
+- Namespacing the api (api/v1)
+- Using Redux in the frontend as a tool for state management.
+- Using blueprint as a CSS Framework.
 
-* Deployment instructions
-
-* ...
